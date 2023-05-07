@@ -1,0 +1,129 @@
+body {
+  background: #303030;
+  margin: 0;
+  padding: 0;
+  font-family: poppins,monospace;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+header {
+  background-color: #252525;
+}
+
+main {
+  margin: 4rem;
+}
+
+footer {
+  background-color: #242424;
+  margin-top: auto;
+
+}
+
+header,
+main,
+footer {
+  color: #ffffff;
+  padding: 0.75rem;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 768px;
+  margin: auto;
+}
+
+.header--label {
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+.main--container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 0.75rem;
+  /*gap: 1.25rem;*/
+}
+
+.side {
+  background-color: #242424;
+  /*position: static;*/
+  padding: 1.25rem 2rem;
+  width: 100%;
+}
+
+.article--wrap {
+  display: flex;
+  flex-direction: column;
+  /*gap: 1rem;*/
+}
+
+.header--navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.25rem;
+}
+
+.header--navigation a {
+  font-size: 0.925rem;
+}
+
+.side--grid {
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr;
+  gap: 0.125rem 0.5rem;
+}
+
+.image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  
+}
+
+@media screen and (max-width: 768px) {
+  .header--label {
+    font-size: 1.75rem;
+    padding-top: 0.5rem;
+    text-align: center;
+  }
+
+  .header--navigation {
+    margin-top: 1rem;
+    justify-content: center;
+  }
+
+  .header--navigation a {
+    font-size: 1.25rem;
+  }
+
+  .main--container {
+    flex-direction: column;
+  }
+}
